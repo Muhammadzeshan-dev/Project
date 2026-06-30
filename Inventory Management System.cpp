@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+int main() {
+    string customerName, item1, item2, item3;
+    float price1, price2, price3;
+    int qty1, qty2, qty3;
+    float sub1, sub2, sub3, total;
+    cout << "Enter customer name: ";
+    getline(cin, customerName);
+    cout << "Enter name of Item 1: ";
+    cin >> item1;
+    cout << "Enter price of " << item1 << ": ";
+    cin >> price1;
+    cout << "Enter quantity of " << item1 << ": ";
+    cin >> qty1;
+    cout << "Enter name of Item 2: ";
+    cin >> item2;
+    cout << "Enter price of " << item2 << ": ";
+    cin >> price2;
+    cout << "Enter quantity of " << item2 << ": ";
+    cin >> qty2;
+    cout << "Enter name of Item 3: ";
+    cin >> item3;
+    cout << "Enter price of " << item3 << ": ";
+    cin >> price3;
+    cout << "Enter quantity of " << item3 << ": ";
+    cin >> qty3;
+    sub1 = price1 * qty1;
+    sub2 = price2 * qty2;
+    sub3 = price3 * qty3;
+    total = sub1 + sub2 + sub3;
+    cout << "-------------------------------" << endl;
+    cout << "         GROCERY BILL          " << endl;
+    cout << "-------------------------------" << endl;
+    cout << "Customer Name: " << customerName << endl;
+    cout << "Item\tPrice\tQty\tSubtotal" << endl;
+    cout << "--------------------------------" << endl;
+    cout << item1 << "\t" << price1 << "\t" << qty1 << "\t" << sub1 << endl;
+    cout << item2 << "\t" << price2 << "\t" << qty2 << "\t" << sub2 << endl;
+    cout << item3 << "\t" << price3 << "\t" << qty3 << "\t" << sub3 << endl;
+    cout << "--------------------------------" << endl;
+    cout << "Total Bill: " << total << endl;
+    cout << "--------------------------------" << endl;
+    return 0;
+}
